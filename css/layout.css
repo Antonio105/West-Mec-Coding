@@ -1,0 +1,1357 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+/*Phone*/
+@media only screen and (max-width: 500px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .grid-container {
+        grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+
+    .head-section {
+        padding-top: 0.32rem;
+        padding-bottom: 2rem;
+        background-color: #4c4c4e;
+        position: fixed;
+        width: 100%;
+        height: 2.6rem;
+    }
+
+    .logo {
+        position: relative;
+        top: 0.1rem;
+        right: -0.8rem;
+        -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+    }
+
+    .logo:hover {
+        -webkit-filter: grayscale(0%);
+                filter: grayscale(0%);
+         -webkit-transition: 0.6s ease;
+         transition: 0.6s ease;
+     }
+    /*Link for Central Coding*/
+    .codingbutton {
+        -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+        position: relative; 
+        top: -0.2rem;
+        right: -4.7rem;
+    }
+
+    .codingbutton:hover {
+        -webkit-filter: grayscale(0%);
+                    filter: grayscale(0%);
+        -webkit-transition: 0.6s ease;
+        transition: 0.6s ease;
+    }
+
+    ul li:hover > ul, ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    } 
+
+    ul li ul li {
+        clear: both;
+        width: 100%;
+    }
+
+    ul li ul {
+        background: #4c4c4e;
+        visibility: hidden;
+        opacity: 0;
+        min-width: 0.2rem;
+        position: absolute;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        margin-top: 0.15rem;
+        padding-left: 0.5rem;
+        left: 0;
+        display: none;
+        padding-bottom: 0.55em;
+    }
+    
+    li {
+        color: #fff;
+        background: #4c4c4e;
+        float: right;
+        display: block;
+        padding: 0.15rem;
+        position: relative;
+        text-decoration: none;
+        -webkit-transition-duration: 0.5s;
+                transition-duration: 0.5s;
+    }
+
+    * {
+        cursor: url(images/basketball.png), auto;
+    }
+
+    ul {
+        background: #4c4c4e;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    ul.navigation-bar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-line-pack: stretch;
+        list-style-type: none;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: space-evenly;   
+        -ms-flex-line-pack: space-evenly;   
+            align-content: space-evenly;
+            -ms-flex-preferred-size: 2em;
+        -webkit-box-flex: 2 2;
+            -ms-flex-positive: 2 2;
+                flex-grow: 50 50;
+        -ms-flex-preferred-size: 35em;
+            flex-basis: 35em;
+    }
+
+    .navigation-bar a {
+        text-decoration: none;
+        -ms-flex-line-pack: space-evenly;
+            align-content: space-evenly;
+        color: white;
+        font-family: 'Nunito', sans-serif;
+        font-size: 0.8rem;
+    }
+
+    .navigation-barM a {
+        text-decoration: none;
+        -ms-flex-line-pack: space-evenly;
+            align-content: space-evenly;
+        color: white;
+        font-family: 'Nunito', sans-serif;
+        font-size: 0.27rem;
+    }
+
+    .navigation-bar a:hover {
+        color: #f7931d;
+        -webkit-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .slider {
+        padding-top: 18rem;
+        margin: auto;
+        grid-row: 1/3;
+        grid-column: 1/5;
+        background-size: 12rem 7rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: -5rem;
+        -webkit-animation: slide 18s infinite;
+                animation: slide 18s infinite;
+    }
+
+    @-webkit-keyframes slide {
+        from {
+            background-image: url(../images/Group1.jpg);
+        }
+
+        35% {
+            background-image: url(../images/PC1.jpg);
+        }
+
+        65% {
+            background-image: url(../images/PC2.jpg);
+        }
+
+        100% {
+            background-image: url(../images/Group3.jpg);
+        }         
+    }
+
+    @keyframes slide {
+        from {
+            background-image: url(../images/Group1.jpg);
+        }
+
+        35% {
+            background-image: url(../images/PC1.jpg);
+        }
+
+        65% {
+            background-image: url(../images/PC2.jpg);
+        }
+
+        100% {
+            background-image: url(../images/Group3.jpg);
+        }         
+    }
+    
+    .body-section {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        grid-row: 4/6;
+        grid-column: 1/5;
+        font-family: 'Nunito', sans-serif;
+        font-size: 0.6rem;
+        margin-bottom: 3.3rem;
+    }
+
+    .body-section2 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 6rem;
+        grid-row: 4/6;
+        grid-column: 1/5;
+        font-family: 'Nunito', sans-serif;
+        font-size: 0.6rem;
+    }
+
+    .sonic {
+        float:left; 
+        margin-right: 1.5rem; 
+        margin-left: 0.2rem;
+    }
+
+    .sonic-card {
+        float:left; 
+        margin-right: 1.5rem;
+        margin-left: 0.2rem; 
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        clear:both; 
+    }
+
+    .group4 {
+        margin-left: 2rem;
+        position: relative; 
+        z-index: -100;
+    }
+
+    .marginright {
+        margin-right: 0.25rem;
+        padding-top: 0.3rem;
+    }
+
+    .mapouter{
+        position:relative;
+        z-index: -100;
+        margin-left: -15rem;
+        text-align:right;
+        height:500px;
+        width:600px;
+    }
+
+    .gmap-canvas {
+        overflow:hidden;
+        background:none!important;
+        height:500px;
+        width:600px;
+    }
+
+    .forward {
+        display: none;
+    }
+
+    .footer {
+        grid-row: 7/8;
+        grid-column: 1/5;
+        background-color:#4c4c4e;
+        text-align: center;
+        clear: both;
+        font-size: 25%;
+        font-family: 'Nunito', sans-serif;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }  
+
+    .footer2 {
+        grid-row: 7/8;
+        grid-column: 1/5;
+        background-color:#4c4c4e;
+        text-align: center;
+        clear: both;
+        font-size: 25%;
+        font-family: 'Nunito', sans-serif;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        color: white;
+        position: relative;
+        bottom: -1rem;
+        width: 100%;
+    }  
+
+    .footer3 {
+        grid-row: 7/8;
+        grid-column: 1/5;
+        background-color:#4c4c4e;
+        text-align: center;
+        clear: both;
+        font-size: 25%;
+        font-family: 'Nunito', sans-serif;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        color: white;
+        position: relative;
+        bottom: 0rem;
+        width: 100%;
+    }  
+
+    .footer-link {
+        color: #f7931d;
+        text-decoration: none;
+    }
+
+    .footer-link:hover {
+        opacity: 0.7;
+    }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 501px) and (max-width: 702px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .grid-container {
+        grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+
+    .head-section {
+        padding-top: 0.32rem;
+        padding-bottom: 2rem;
+        background-color: #4c4c4e;
+        position: fixed;
+        width: 100%;
+        height: 2.6rem;
+    }
+
+    .logo {
+        -webkit-transform: scale(1.3, 1.3);
+                transform: scale(1.3, 1.3);
+        padding-left: 0.5rem;
+        padding-bottom: 0.2rem;
+        padding-top: 0.2rem;
+        position: relative;
+        top: 0.1rem;
+        right: -0.8rem;
+        -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+    }
+
+    .logo:hover {
+        -webkit-filter: grayscale(0%);
+                filter: grayscale(0%);
+         -webkit-transition: 0.6s ease;
+         transition: 0.6s ease;
+     }
+    /*Link for Central Coding*/
+    .codingbutton {
+        -webkit-transform: scale(1.3, 1.3);
+                transform: scale(1.3, 1.3);
+        -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+        position: relative; 
+        top: -0.2rem;
+        right: -4.7rem;
+    }
+
+    .codingbutton:hover {
+        -webkit-filter: grayscale(0%);
+                    filter: grayscale(0%);
+        -webkit-transition: 0.6s ease;
+        transition: 0.6s ease;
+    }
+
+    ul li:hover > ul, ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    } 
+
+    ul li ul li {
+        clear: both;
+        width: 100%;
+    }
+
+    ul li ul {
+        background: #4c4c4e;
+        visibility: hidden;
+        opacity: 0;
+        min-width: 0.2rem;
+        position: absolute;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        margin-top: 0.15rem;
+        padding-left: 0.5rem;
+        left: 0;
+        display: none;
+        padding-bottom: 0.55em;
+    }
+    
+    li {
+        color: #fff;
+        background: #4c4c4e;
+        float: right;
+        display: block;
+        padding: 0.15rem;
+        position: relative;
+        text-decoration: none;
+        -webkit-transition-duration: 0.5s;
+                transition-duration: 0.5s;
+    }
+
+    * {
+        cursor: url(images/basketball.png), auto;
+    }
+
+    ul {
+        background: #4c4c4e;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    ul.navigation-bar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-line-pack: stretch;
+        list-style-type: none;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: space-evenly;   
+        -ms-flex-line-pack: space-evenly;   
+            align-content: space-evenly;
+            -ms-flex-preferred-size: 2em;
+        -webkit-box-flex: 2 2;
+            -ms-flex-positive: 2 2;
+                flex-grow: 50 50;
+        -ms-flex-preferred-size: 35em;
+            flex-basis: 35em;
+    }
+
+    .navigation-bar a {
+        text-decoration: none;
+        -ms-flex-line-pack: space-evenly;
+            align-content: space-evenly;
+        color: white;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .navigation-barM a {
+        text-decoration: none;
+        -ms-flex-line-pack: space-evenly;
+            align-content: space-evenly;
+        color: white;
+        font-family: 'Nunito', sans-serif;
+        font-size: 0.6rem;
+    }
+
+    .navigation-bar a:hover {
+        color: #f7931d;
+        -webkit-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .slider {
+        padding-top: 24.5rem;
+        margin: auto;
+        grid-row: 1/3;
+        grid-column: 1/5;
+        background-size: 19rem 11rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: -6rem;
+        -webkit-animation: slide 18s infinite;
+                animation: slide 18s infinite;
+    }
+
+
+    @-webkit-keyframes slide {
+        from {
+            background-image: url(../images/Group1.jpg);
+        }
+
+        35% {
+            background-image: url(../images/PC1.jpg);
+        }
+
+        65% {
+            background-image: url(../images/PC2.jpg);
+        }
+
+        100% {
+            background-image: url(../images/Group3.jpg);
+        }         
+    }
+
+    @keyframes slide {
+        from {
+            background-image: url(../images/Group1.jpg);
+        }
+
+        35% {
+            background-image: url(../images/PC1.jpg);
+        }
+
+        65% {
+            background-image: url(../images/PC2.jpg);
+        }
+
+        100% {
+            background-image: url(../images/Group3.jpg);
+        }         
+    }
+    
+    .body-section {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        grid-row: 4/6;
+        grid-column: 1/5;
+        font-family: 'Nunito', sans-serif;
+        font-size: 0.7rem;
+        margin-bottom: 4rem;
+    }
+
+    .body-section2 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 8rem;
+        grid-row: 4/6;
+        grid-column: 1/5;
+        font-family: 'Nunito', sans-serif;
+        font-size: 0.7rem;
+    }
+
+    .sonic {
+        float:left; 
+        margin-right: 1.5rem; 
+        margin-left: 0.2rem;
+        transform: scale( 1.2, 1.2);
+        position: relative;
+        z-index: -100;
+    }
+
+    .sonic-card {
+        float:left; 
+        margin-right: 1.5rem;
+        margin-left: 0.2rem; 
+        margin-top: 1rem;
+        clear:both; 
+        position: relative;
+        z-index: -101;
+        transform: scale( 1.2, 1.2);
+    }
+
+    .group4 {
+        margin-top: 1rem;
+        margin-left: 9rem;
+        margin-bottom: 2rem;
+        transform: scale(1.5, 1.5);
+        position: relative;
+        z-index: -102;
+    }
+
+    .marginright {
+        padding-top: 1.6rem;
+        padding-left: 2rem;
+        margin-right: 3.5rem;
+        padding-bottom: 1.5rem;
+        transform: scale(1.5, 1.5);
+        position: relative;
+        z-index: -100;
+    }
+
+    .mapouter{
+        position:relative;
+        z-index: -100;
+        margin-left: -15rem;
+        text-align:right;
+        height:500px;
+        width:600px;
+    }
+
+    .gmap-canvas {
+        overflow:hidden;
+        background:none!important;
+        height:500px;
+        width:600px;
+    }
+
+    .forward {
+        display: none;
+    }
+
+    .footer {
+        grid-row: 7/8;
+        grid-column: 1/5;
+        background-color:#4c4c4e;
+        text-align: center;
+        clear: both;
+        font-size: 43%;
+        font-family: 'Nunito', sans-serif;
+        padding-top: 1.5em;
+        padding-bottom: 1.65em;
+        color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }  
+
+    .footer2 {
+        grid-row: 7/8;
+        grid-column: 1/5;
+        background-color:#4c4c4e;
+        text-align: center;
+        clear: both;
+        font-size: 43%;
+        font-family: 'Nunito', sans-serif;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        color: white;
+        position: relative;
+        bottom: 0rem;
+        width: 100%;
+    }  
+
+    .footer3 {
+        grid-row: 7/8;
+        grid-column: 1/5;
+        background-color:#4c4c4e;
+        text-align: center;
+        clear: both;
+        font-size: 43%;
+        font-family: 'Nunito', sans-serif;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        color: white;
+        position: relative;
+        bottom: 0rem;
+        width: 100%;
+    }  
+
+    .footer-link {
+        color: #f7931d;
+        text-decoration: none;
+    }
+
+    .footer-link:hover {
+        opacity: 0.7;
+    }
+}
+
+
+/*Large Tablet*/
+@media only screen and (min-width: 703px) and (max-width: 1000px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .grid-container {
+        grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+
+    .head-section {
+        padding-top: 0.32rem;
+        padding-bottom: 3rem;
+        margin-bottom: 8rem;
+        background-color: #4c4c4e;
+        position: fixed;
+        width: 100%;
+        height: 2.6rem;
+    }
+
+    .logo {
+        -webkit-transform: scale(1.6, 1.6);
+                transform: scale(1.6, 1.6);
+        padding-left: 1.1rem;
+        padding-bottom: 0.5rem;
+        padding-top: 0.4rem;
+        position: relative;
+        top: 0.1rem;
+        right: -0.8rem;
+        -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+    }
+
+    .logo:hover {
+        -webkit-filter: grayscale(0%);
+                filter: grayscale(0%);
+         -webkit-transition: 0.6s ease;
+         transition: 0.6s ease;
+     }
+    /*Link for Central Coding*/
+    .codingbutton {
+        -webkit-transform: scale(1.7, 1.7);
+                transform: scale(1.7, 1.7);
+        -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+        position: relative; 
+        top: -0.5rem;
+        right: -4.7rem;
+    }
+
+    .codingbutton:hover {
+        -webkit-filter: grayscale(0%);
+                    filter: grayscale(0%);
+        -webkit-transition: 0.6s ease;
+        transition: 0.6s ease;
+    }
+
+    ul li:hover > ul, ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    } 
+
+    ul li ul li {
+        clear: both;
+        width: 100%;
+    }
+
+    ul li ul {
+        background: #4c4c4e;
+        visibility: hidden;
+        opacity: 0;
+        min-width: 0.2rem;
+        position: absolute;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        margin-top: 0.15rem;
+        padding-left: 0.5rem;
+        left: 0;
+        display: none;
+        padding-bottom: 0.55em;
+    }
+    
+    li {
+        color: #fff;
+        background: #4c4c4e;
+        float: right;
+        display: block;
+        padding: 0.15rem;
+        position: relative;
+        text-decoration: none;
+        -webkit-transition-duration: 0.5s;
+                transition-duration: 0.5s;
+    }
+
+    * {
+        cursor: url(images/basketball.png), auto;
+    }
+
+    ul {
+        background: #4c4c4e;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    ul.navigation-bar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-line-pack: stretch;
+        list-style-type: none;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: space-evenly;   
+        -ms-flex-line-pack: space-evenly;   
+            align-content: space-evenly;
+            -ms-flex-preferred-size: 2em;
+        -webkit-box-flex: 2 2;
+            -ms-flex-positive: 2 2;
+                flex-grow: 50 50;
+        -ms-flex-preferred-size: 35em;
+            flex-basis: 35em;
+    }
+
+    .navigation-bar a {
+        text-decoration: none;
+        -ms-flex-line-pack: space-evenly;
+            align-content: space-evenly;
+        color: white;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .navigation-barM a {
+        text-decoration: none;
+        -ms-flex-line-pack: space-evenly;
+            align-content: space-evenly;
+        color: white;
+        font-family: 'Nunito', sans-serif;
+        font-size: 0.6rem;
+    }
+
+    .navigation-bar a:hover {
+        color: #f7931d;
+        -webkit-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .slider {
+        padding-top: 28rem;
+        margin: auto;
+        grid-row: 1/3;
+        grid-column: 1/5;
+        background-size: 22rem 13rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: -6rem;
+        -webkit-animation: slide 18s infinite;
+                animation: slide 18s infinite;
+    }
+
+
+    @-webkit-keyframes slide {
+        from {
+            background-image: url(../images/Group1.jpg);
+        }
+
+        35% {
+            background-image: url(../images/PC1.jpg);
+        }
+
+        65% {
+            background-image: url(../images/PC2.jpg);
+        }
+
+        100% {
+            background-image: url(../images/Group3.jpg);
+        }         
+    }
+
+    @keyframes slide {
+        from {
+            background-image: url(../images/Group1.jpg);
+        }
+
+        35% {
+            background-image: url(../images/PC1.jpg);
+        }
+
+        65% {
+            background-image: url(../images/PC2.jpg);
+        }
+
+        100% {
+            background-image: url(../images/Group3.jpg);
+        }         
+    }
+    
+    .body-section {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        grid-row: 4/6;
+        grid-column: 1/5;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1rem;
+        margin-bottom: 7.9rem;
+    }
+
+    .body-section2 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 9rem;
+        grid-row: 4/6;
+        grid-column: 1/5;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1rem;
+    }
+
+    .sonic {
+        float:left; 
+        margin-right: 3rem; 
+        margin-left: 2rem;
+        transform: scale(1.5, 1.5);
+        position: relative;
+        z-index: -100;
+
+    }
+
+    .sonic-card {
+        float:left; 
+        margin-right: 1.5rem;
+        margin-left: 2rem; 
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+        clear:both; 
+        transform: scale(1.5, 1.5);
+        position: relative;
+        z-index: -101;
+    }
+
+    .group4 {
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        margin-left: 14rem;
+        transform: scale(3, 3);
+        position: relative; 
+        z-index: -100;
+    }
+
+    .marginright {
+        padding-top: 3.3rem;
+        padding-left: 3.5rem;
+        margin-right: 9rem;
+        padding-bottom: 2rem;
+        transform: scale(2.5, 2.5);
+        position: relative;
+        z-index: -100;
+    }
+
+    .mapouter{
+        position:relative;
+        z-index: -100;
+        margin-left: -15rem;
+        text-align:right;
+        height:500px;
+        width:600px;
+    }
+
+    .gmap-canvas {
+        overflow:hidden;
+        background:none!important;
+        height:500px;
+        width:600px;
+    }
+
+    .forward {
+        display: none;
+    }
+
+    .footer {
+        grid-row: 7/8;
+        grid-column: 1/5;
+        background-color:#4c4c4e;
+        text-align: center;
+        clear: both;
+        font-size: 53%;
+        font-family: 'Nunito', sans-serif;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        color: white;
+        position: relative;
+        bottom: -3.7rem;
+        width: 100%;
+    }    
+    
+    .footer2 {
+        grid-row: 7/8;
+        grid-column: 1/5;
+        background-color:#4c4c4e;
+        text-align: center;
+        clear: both;
+        font-size: 53%;
+        font-family: 'Nunito', sans-serif;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        color: white;
+        position: relative;
+        bottom: -4rem;
+        width: 100%;
+    }    
+
+    .footer3 {
+        grid-row: 7/8;
+        grid-column: 1/5;
+        background-color:#4c4c4e;
+        text-align: center;
+        clear: both;
+        font-size: 53%;
+        font-family: 'Nunito', sans-serif;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        color: white;
+        position: relative;
+        bottom: 0rem;
+        width: 100%;
+    }  
+
+    .footer-link {
+        color: #f7931d;
+        text-decoration: none;
+    }
+
+    .footer-link:hover {
+        opacity: 0.7;
+    }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 1001px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .grid-container {
+        grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+
+    .head-section {
+        padding-top: 0.32rem;
+        padding-bottom: 5rem;
+        margin-bottom: 5rem;
+        background-color: #4c4c4e;
+        position: fixed;
+        width: 100%;
+        height: 2.6rem;
+    }
+
+    .logo {
+        -webkit-transform: scale(2.5, 2.5);
+                transform: scale(2.5, 2.5);
+        padding-left: 2.7rem;
+        padding-bottom: 0.65rem;
+        padding-top: 1.3rem;
+        position: relative;
+        top: 0.1rem;
+        right: -0.8rem;
+        -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+    }
+
+    .logo:hover {
+        -webkit-filter: grayscale(0%);
+                filter: grayscale(0%);
+         -webkit-transition: 0.6s ease;
+         transition: 0.6s ease;
+     }
+    /*Link for Central Coding*/
+    .codingbutton {
+
+        -webkit-transform: scale(2.7, 2.7);
+                transform: scale(2.7, 2.7);
+        -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+        position: relative; 
+        top: -0.5rem;
+        right: -17.5rem;
+    }
+
+    .codingbutton:hover {
+        -webkit-filter: grayscale(0%);
+                    filter: grayscale(0%);
+        -webkit-transition: 0.6s ease;
+        transition: 0.6s ease;
+    }
+
+    ul li:hover > ul, ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    } 
+
+    ul li ul li {
+        clear: both;
+        width: 100%;
+    }
+
+    ul li ul {
+        background: #4c4c4e;
+        visibility: hidden;
+        opacity: 0;
+        min-width: 0.2rem;
+        position: absolute;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        margin-top: 0.15rem;
+        padding-left: 0.5rem;
+        left: 0;
+        display: none;
+        padding-bottom: 0.55em;
+    }
+    
+    li {
+        color: #fff;
+        background: #4c4c4e;
+        float: right;
+        display: block;
+        padding: 0.15rem;
+        position: relative;
+        text-decoration: none;
+        -webkit-transition-duration: 0.5s;
+                transition-duration: 0.5s;
+    }
+
+    * {
+        cursor: url(images/basketball.png), auto;
+    }
+
+    ul {
+        background: #4c4c4e;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    ul.navigation-bar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-line-pack: stretch;
+        list-style-type: none;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: space-evenly;   
+        -ms-flex-line-pack: space-evenly;   
+            align-content: space-evenly;
+            -ms-flex-preferred-size: 2em;
+        -webkit-box-flex: 2 2;
+            -ms-flex-positive: 2 2;
+                flex-grow: 50 50;
+        -ms-flex-preferred-size: 35em;
+            flex-basis: 35em;
+    }
+
+    .navigation-bar a {
+        text-decoration: none;
+        -ms-flex-line-pack: space-evenly;
+            align-content: space-evenly;
+        color: white;
+        font-family: 'Nunito', sans-serif;
+        font-size: 2.5rem;
+    }
+
+    .navigation-barM a {
+        text-decoration: none;
+        -ms-flex-line-pack: space-evenly;
+            align-content: space-evenly;
+        color: white;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.3rem;
+        padding: 0.4rem;
+    }
+
+    .navigation-bar a:hover {
+        color: #f7931d;
+        -webkit-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .slider {
+        padding-top: 44rem;
+        margin: auto;
+        grid-row: 1/3;
+        grid-column: 1/5;
+        background-size: 36rem 24rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: -9rem;
+        -webkit-animation: slide 18s infinite;
+                animation: slide 18s infinite;
+    }
+
+
+    @-webkit-keyframes slide {
+        from {
+            background-image: url(../images/Group1.jpg);
+        }
+
+        35% {
+            background-image: url(../images/PC1.jpg);
+        }
+
+        65% {
+            background-image: url(../images/PC2.jpg);
+        }
+
+        100% {
+            background-image: url(../images/Group3.jpg);
+        }         
+    }
+
+    @keyframes slide {
+        from {
+            background-image: url(../images/Group1.jpg);
+        }
+
+        35% {
+            background-image: url(../images/PC1.jpg);
+        }
+
+        65% {
+            background-image: url(../images/PC2.jpg);
+        }
+
+        100% {
+            background-image: url(../images/Group3.jpg);
+        }         
+    }
+    
+    .body-section {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 0.3rem;
+        grid-row: 4/6;
+        grid-column: 1/5;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.65rem;
+    }
+
+    .body-section2 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 12rem;
+        grid-row: 4/6;
+        grid-column: 1/5;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.30rem;
+    }
+
+    .sonic {
+        float:left; 
+        margin-top: 1rem;
+        margin-right: 7rem; 
+        margin-left: 7rem;
+        transform: scale(3, 3);
+        position: relative;
+        z-index: -100;
+
+    }
+
+    .sonic-card {
+        float:left; 
+        margin-right: 1.5rem;
+        margin-left: 8rem; 
+        margin-top: 10rem;
+        clear:both; 
+        transform: scale(3.3, 3.3);
+        position: relative;
+        z-index: -101;
+    }
+
+    .group4 {
+        margin-top: 11rem;
+        margin-left: 32rem;
+        transform: scale(5, 5);
+        position: relative;
+        z-index: -102;
+    }
+
+    .marginright {
+        padding-top: 4.5rem;
+        padding-bottom: 2.5rem;
+        padding-left: 5rem;
+        margin-right: 17.5rem;
+        transform: scale(3.4, 3.3);
+        position: relative;
+        z-index: -100;
+    }
+
+    .mapouter{
+        margin-top: 4rem;
+        margin-right: 10rem;
+        position:relative;
+        z-index: -100;
+        margin-left: -14rem;
+        text-align:right;
+        height:500px;
+        width:600px;
+        transform: scale(1.2, 1.2);
+    }
+
+    .gmap-canvas {
+        overflow:hidden;
+        background:none!important;
+        height: 500px;
+        width: 600px;
+    }
+
+    .forward {
+        z-index:-101;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .footer {
+        grid-row: 7/8;
+        grid-column: 1/5;
+        background-color:#4c4c4e;
+        text-align: center;
+        clear: both;
+        font-size: 95%;
+        font-family: 'Nunito', sans-serif;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        color: white;
+        position: relative;
+        bottom: -11.3rem;
+        width: 100%;
+    }  
+
+    .footer2 {
+        grid-row: 7/8;
+        grid-column: 1/5;
+        background-color:#4c4c4e;
+        text-align: center;
+        clear: both;
+        font-size: 95%;
+        font-family: 'Nunito', sans-serif;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        color: white;
+        position: relative;
+        bottom: -22.5rem;
+        width: 100%;
+    }  
+
+    .footer3 {
+        grid-row: 7/8;
+        grid-column: 1/5;
+        background-color:#4c4c4e;
+        text-align: center;
+        clear: both;
+        font-size: 95%;
+        font-family: 'Nunito', sans-serif;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        color: white;
+        position: relative;
+        bottom: -5.5rem;
+        width: 100%;
+    }  
+
+    .footer-link {
+        color: #f7931d;
+        text-decoration: none;
+    }
+
+    .footer-link:hover {
+        opacity: 0.7;
+    } 
+}
